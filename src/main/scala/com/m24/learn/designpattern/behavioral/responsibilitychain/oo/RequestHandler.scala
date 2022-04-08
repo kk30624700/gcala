@@ -14,6 +14,7 @@ class Developer(next: RequestHandler) extends RequestHandler(next) {
     override def handleRequest(req: Request): Unit = req match {
         case FixBugRequest(desc) => {
             println(s"i am a developer. i can fix this bug: $desc")
+            req.markHandled()
         }
         case _ => {
             super.handleRequest(req)
