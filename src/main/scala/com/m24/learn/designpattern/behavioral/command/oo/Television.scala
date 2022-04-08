@@ -1,4 +1,4 @@
-package com.m24.learn.designpattern.behavioral.observer.oo
+package com.m24.learn.designpattern.behavioral.command.oo
 
 class Television {
     var channel: Int = 0

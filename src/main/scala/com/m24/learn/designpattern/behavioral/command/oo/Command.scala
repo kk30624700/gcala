@@ -1,4 +1,4 @@
-package com.m24.learn.designpattern.behavioral.observer.oo
+package com.m24.learn.designpattern.behavioral.command.oo
 
 trait Command {
     def execute(tv: Television): Unit
