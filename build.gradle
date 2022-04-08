@@ -1,0 +1,25 @@
+apply plugin: 'scala'
+apply plugin: 'idea'
+
+group 'com.m24.learn'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public/"
+    }
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.11.2'
+    compile "org.scala-lang:scala-compiler:2.11.2"
+    compile "org.scala-lang:scala-reflect:2.11.2"
+    compile "com.typesafe.akka:akka-actor_2.11:2.5.32"
+    compile "com.typesafe.akka:akka-remote_2.11:2.5.32"
+    testCompile "junit:junit:4.11"
+    testCompile "org.scalatest:scalatest_2.11:3.0.0"
+}

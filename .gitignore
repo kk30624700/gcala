@@ -1,0 +1,10 @@
+/out
+/build
+/.gradle
+/.idea
+/gcala.iml
+/gcala.ipr
+/gcala.iws
+/gcala.main.iml
+/gcala.test.iml
+/settings.gradle
